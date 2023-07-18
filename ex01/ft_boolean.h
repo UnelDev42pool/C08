@@ -6,7 +6,7 @@
 /*   By: edi-iori <edi-iori@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/13 14:49:10 by edi-iori          #+#    #+#             */
-/*   Updated: 2023/07/16 13:37:16 by edi-iori         ###   ########lyon.fr   */
+/*   Updated: 2023/07/18 13:00:45 by edi-iori         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,9 @@
 # define TRUE 1
 # define FALSE 0
 # define SUCCESS '\n'
-# define EVEN(nb) (!(nb % 2))
-# define EVEN_MSG "I have an even number of arguments."
-# define ODD_MSG "I have an odd number of arguments."
+# define EVEN(nb) ((nb % 2) == 0)
+# define EVEN_MSG "I have an even number of arguments.\n"
+# define ODD_MSG "I have an odd number of arguments.\n"
 
 typedef int	t_bool;
 

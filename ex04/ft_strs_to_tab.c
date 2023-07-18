@@ -6,18 +6,19 @@
 /*   By: edi-iori <edi-iori@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/14 11:24:33 by edi-iori          #+#    #+#             */
-/*   Updated: 2023/07/14 14:13:03 by edi-iori         ###   ########lyon.fr   */
+/*   Updated: 2023/07/18 13:30:33 by edi-iori         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
+#include <ft_stock_str.h>
 
-// typedef struct s_stock_str
-// {
-// 	int		size;
-// 	char	*str;
-// 	char	*copy;
-// } t_stock_str;
+typedef struct s_stock_str
+{
+	int		size;
+	char	*str;
+	char	*copy;
+} t_stock_str;
 
 char	*ft_strcpy(char *dest, char *src)
 {
@@ -72,7 +73,8 @@ struct s_stock_str	*ft_strs_to_tab(int ac, char **av)
 	return (buffer);
 }
 
+// void	ft_show_tab(t_stock_str *par);
 // int main(int argc, char *argv[])
 // {
-// 	ft_strs_to_tab(argc, argv);
+// 	ft_show_tab(ft_strs_to_tab(argc, argv));
 // }

@@ -6,16 +6,18 @@
 /*   By: edi-iori <edi-iori@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/14 14:16:31 by edi-iori          #+#    #+#             */
-/*   Updated: 2023/07/16 13:31:10 by edi-iori         ###   ########lyon.fr   */
+/*   Updated: 2023/07/18 13:32:57 by edi-iori         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-// typedef struct s_stock_str
-// {
-// 	int		size;
-// 	char	*str;
-// 	char	*copy;
-// } t_stock_str;
+#include <ft_stock_str.h>
+#include <unistd.h>
+typedef struct s_stock_str
+{
+	int		size;
+	char	*str;
+	char	*copy;
+} t_stock_str;
 
 int	ft_strlen(char *str)
 {
@@ -66,7 +68,7 @@ void	ft_show_tab(t_stock_str *par)
 	int	i;
 
 	i = 0;
-	while (par[i].size == 1 && par[i].str == 0)
+	while (par[i].str != 0)
 	{
 		write(1, par[i].str, ft_strlen(par[i].str));
 		write(1, "\n", 1);
@@ -74,5 +76,6 @@ void	ft_show_tab(t_stock_str *par)
 		write(1, "\n", 1);
 		write(1, par[i].copy, ft_strlen(par[i].copy));
 		write(1, "\n", 1);
+		i++;
 	}
 }
