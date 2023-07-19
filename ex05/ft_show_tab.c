@@ -6,18 +6,18 @@
 /*   By: edi-iori <edi-iori@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/14 14:16:31 by edi-iori          #+#    #+#             */
-/*   Updated: 2023/07/18 13:32:57 by edi-iori         ###   ########lyon.fr   */
+/*   Updated: 2023/07/18 15:54:35 by edi-iori         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <ft_stock_str.h>
 #include <unistd.h>
-typedef struct s_stock_str
-{
-	int		size;
-	char	*str;
-	char	*copy;
-} t_stock_str;
+// typedef struct s_stock_str
+// {
+// 	int		size;
+// 	char	*str;
+// 	char	*copy;
+// } t_stock_str;
 
 int	ft_strlen(char *str)
 {
