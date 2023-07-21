@@ -6,12 +6,12 @@
 /*   By: edi-iori <edi-iori@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/14 11:24:33 by edi-iori          #+#    #+#             */
-/*   Updated: 2023/07/18 15:54:27 by edi-iori         ###   ########lyon.fr   */
+/*   Updated: 2023/07/21 13:24:19 by edi-iori         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
-#include <ft_stock_str.h>
+#include "ft_stock_str.h"
 
 // typedef struct s_stock_str
 // {
